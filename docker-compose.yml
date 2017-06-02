@@ -5,8 +5,6 @@ services:
     image: kodermax/alfresco-platform:5.2.f
     environment:
       CATALINA_OPTS: "-Xmx1G -XX:+UseConcMarkSweepGC"
-    depends_on:
-      - postgresql
     networks:
       - internal
     volumes:
