@@ -49,7 +49,7 @@ services:
       - /usr/local/tomcat/work/
 
   libreoffice:
-    image: kodermax/alfresco-libreoffice:5.2.7
+    image: kodermax/docker-alfresco-libreoffice:5.2.7
     restart: always
     networks:
       - internal
