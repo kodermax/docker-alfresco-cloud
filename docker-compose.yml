@@ -2,7 +2,7 @@ version: '2'
 
 services:
   alfresco:
-    image: kodermax/alfresco-platform:5.2.f
+    image: kodermax/docker-alfresco-platform:5.2.f
     environment:
       CATALINA_OPTS: "-Xmx1G -XX:+UseConcMarkSweepGC"
     networks:
@@ -16,7 +16,7 @@ services:
       - /usr/local/tomcat/work/
 
   share:
-    image: kodermax/alfresco-share:5.2.e
+    image: kodermax/docker-alfresco-share:5.2.e
     environment:
       CATALINA_OPTS: "-Xmx1G -XX:+UseConcMarkSweepGC"
     depends_on:
@@ -33,7 +33,7 @@ services:
       - /usr/local/tomcat/work/
 
   solr:
-    image: kodermax/alfresco-solr:5.2.f
+    image: kodermax/docker-alfresco-solr:5.2.f
     environment:
       CATALINA_OPTS: "-Xmx1G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:G1HeapRegionSize=8m -XX:MaxGCPauseMillis=200"
     depends_on:
