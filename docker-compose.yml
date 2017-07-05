@@ -5,6 +5,8 @@ services:
     image: kodermax/docker-alfresco-platform:5.2.f
     environment:
       CATALINA_OPTS: "-Xmx1G -XX:+UseConcMarkSweepGC"
+      AWS_ACCESS_KEY_ID: "AKIAIQYOERXOVAST5IRQ"
+      AWS_SECRET_ACCESS_KEY: "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"
     networks:
       - internal
     ports:
