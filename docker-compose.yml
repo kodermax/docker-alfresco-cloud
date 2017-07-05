@@ -7,6 +7,10 @@ services:
       CATALINA_OPTS: "-Xmx1G -XX:+UseConcMarkSweepGC"
       AWS_ACCESS_KEY_ID: "AKIAIQYOERXOVAST5IRQ"
       AWS_SECRET_ACCESS_KEY: "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"
+      ALF_DB_LOGIN: "postgres"
+      ALF_DB_NAME: "alfresco"
+      ALF_DB_PASSWORD: "alfresco"
+      ALF_DB_URL: "jdbc:postgresql://35.188.68.12:5432/alfresco"
     networks:
       - internal
     ports:
